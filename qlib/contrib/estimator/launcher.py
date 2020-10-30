@@ -5,9 +5,9 @@
 import argparse
 import importlib
 
-from ... import init
-from .config import EstimatorConfigManager
-from ...log import get_module_logger
+from qlib import init
+from qlib.contrib.estimator.config import EstimatorConfigManager
+from qlib.log import get_module_logger
 from sacred import Experiment
 from sacred.observers import FileStorageObserver
 from sacred.observers import MongoObserver

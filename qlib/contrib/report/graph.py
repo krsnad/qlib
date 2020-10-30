@@ -14,7 +14,7 @@ import plotly.graph_objs as go
 from plotly.tools import make_subplots
 from plotly.figure_factory import create_distplot
 
-from ...utils import get_module_by_module_path
+from qlib.utils import get_module_by_module_path
 
 
 class BaseGraph(object):

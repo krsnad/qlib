@@ -5,7 +5,7 @@
 from __future__ import division
 from __future__ import print_function
 
-from .data import (
+from qlib.data.data import (
     D,
     CalendarProvider,
     InstrumentProvider,
@@ -25,7 +25,7 @@ from .data import (
     ClientProvider,
 )
 
-from .cache import (
+from qlib.data.cache import (
     ExpressionCache,
     DatasetCache,
     DiskExpressionCache,

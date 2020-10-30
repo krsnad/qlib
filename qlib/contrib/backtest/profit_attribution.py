@@ -4,9 +4,9 @@
 
 import numpy as np
 import pandas as pd
-from .position import Position
-from ...data import D
-from ...config import C
+from qlib.contrib.backtest.position import Position
+from qlib.data import D
+from qlib.config import C
 import datetime
 from pathlib import Path
 

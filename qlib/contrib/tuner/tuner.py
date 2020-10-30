@@ -14,7 +14,7 @@ import numpy as np
 
 from abc import abstractmethod
 
-from ...log import get_module_logger, TimeInspector
+from qlib.log import get_module_logger, TimeInspector
 from hyperopt import fmin, tpe
 from hyperopt import STATUS_OK, STATUS_FAIL
 

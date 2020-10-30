@@ -9,11 +9,11 @@ import pandas as pd
 import numpy as np
 from scipy.stats import pearsonr
 
-from ...log import get_module_logger, TimeInspector
-from .handler import BaseDataHandler
-from .launcher import CONFIG_MANAGER
-from .fetcher import create_fetcher_with_config
-from ...utils import drop_nan_by_y_index, transform_end_date
+from qlib.log import get_module_logger, TimeInspector
+from qlib.contrib.estimator.handler import BaseDataHandler
+from qlib.contrib.estimator.launcher import CONFIG_MANAGER
+from qlib.contrib.estimator.fetcher import create_fetcher_with_config
+from qlib.utils import drop_nan_by_y_index, transform_end_date
 
 
 class BaseTrainer(object):

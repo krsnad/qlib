@@ -4,8 +4,8 @@
 """
 This order generator is for strategies based on WeightStrategyBase
 """
-from ..backtest.position import Position
-from ..backtest.exchange import Exchange
+from qlib.contrib.backtest.position import Position
+from qlib.contrib.backtest.exchange import Exchange
 import pandas as pd
 import copy
 

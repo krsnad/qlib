@@ -10,7 +10,7 @@ import numpy as np
 import six
 import abc
 
-from .data import Cal, DatasetD
+from qlib.data.data import Cal, DatasetD
 
 
 @six.add_metaclass(abc.ABCMeta)

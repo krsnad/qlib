@@ -4,12 +4,12 @@
 
 import numpy as np
 import pandas as pd
-from ...utils import get_date_by_shift, get_date_range
-from ..online.executor import SimulatorExecutor
-from ...data import D
-from .account import Account
-from ...config import C
-from ...log import get_module_logger
+from qlib.utils import get_date_by_shift, get_date_range
+from qlib.contrib.online.executor import SimulatorExecutor
+from qlib.data import D
+from qlib.contrib.backtest.account import Account
+from qlib.config import C
+from qlib.log import get_module_logger
 
 LOG = get_module_logger("backtest")
 

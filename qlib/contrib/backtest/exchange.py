@@ -8,10 +8,10 @@ import logging
 import numpy as np
 import pandas as pd
 
-from ...data import D
-from .order import Order
-from ...config import C, REG_CN
-from ...log import get_module_logger
+from qlib.data import D
+from qlib.contrib.backtest.order import Order
+from qlib.config import C, REG_CN
+from qlib.log import get_module_logger
 
 
 class Exchange:

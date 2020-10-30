@@ -7,14 +7,14 @@ from __future__ import print_function
 import numpy as np
 import pandas as pd
 import inspect
-from ..log import get_module_logger
-from . import strategy as strategy_pool
-from .strategy.strategy import BaseStrategy
-from .backtest.exchange import Exchange
-from .backtest.backtest import backtest as backtest_func, get_date_range
+from qlib.log import get_module_logger
+from qlib.contrib import strategy as strategy_pool
+from qlib.contrib.strategy.strategy import BaseStrategy
+from qlib.contrib.backtest.exchange import Exchange
+from qlib.contrib.backtest.backtest import backtest as backtest_func, get_date_range
 
-from ..data import D
-from ..config import C
+from qlib.data import D
+from qlib.config import C
 
 logger = get_module_logger("Evaluate")
 

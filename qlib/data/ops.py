@@ -8,12 +8,12 @@ from __future__ import print_function
 import numpy as np
 import pandas as pd
 
-from .base import Expression, ExpressionOps
-from ..log import get_module_logger
+from qlib.data.base import Expression, ExpressionOps
+from qlib.log import get_module_logger
 
 try:
-    from ._libs.rolling import rolling_slope, rolling_rsquare, rolling_resi
-    from ._libs.expanding import expanding_slope, expanding_rsquare, expanding_resi
+    from qlib.data._libs.rolling import rolling_slope, rolling_rsquare, rolling_resi
+    from qlib.data._libs.expanding import expanding_slope, expanding_rsquare, expanding_resi
 except ImportError as err:
     print(err)
     print("Do not import qlib package in the repository directory")

@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 
-from .strategy import (
+from qlib.contrib.strategy.strategy import (
     TopkDropoutStrategy,
     BaseStrategy,
     WeightStrategyBase,

@@ -3,8 +3,8 @@
 
 import random
 import pandas as pd
-from ...data import D
-from ..model.base import Model
+from qlib.data import D
+from qlib.contrib.model.base import Model
 
 
 class ScoreFileModel(Model):

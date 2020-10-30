@@ -9,7 +9,7 @@ from time import time
 import logging.handlers
 from logging import config as logging_config
 
-from .config import C
+from qlib.config import C
 
 
 def get_module_logger(module_name, level=None):

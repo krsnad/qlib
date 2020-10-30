@@ -7,10 +7,10 @@ import json
 import copy
 import pathlib
 import pandas as pd
-from ...data import D
-from ...utils import get_date_in_file_name
-from ...utils import get_pre_trading_date
-from ..backtest.order import Order
+from qlib.data import D
+from qlib.utils import get_date_in_file_name
+from qlib.utils import get_pre_trading_date
+from qlib.contrib.backtest.order import Order
 
 
 class BaseExecutor:

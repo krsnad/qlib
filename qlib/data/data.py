@@ -18,13 +18,13 @@ import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 
-from .cache import H
-from ..config import C
-from .ops import *
-from ..log import get_module_logger
-from ..utils import parse_field, read_bin, hash_args, normalize_cache_fields
-from .base import Feature
-from .cache import DiskDatasetCache, DiskExpressionCache
+from qlib.data.cache import H
+from qlib.config import C
+from qlib.data.ops import *
+from qlib.log import get_module_logger
+from qlib.utils import parse_field, read_bin, hash_args, normalize_cache_fields
+from qlib.data.base import Feature
+from qlib.data.cache import DiskDatasetCache, DiskExpressionCache
 
 
 @six.add_metaclass(abc.ABCMeta)
@@ -615,7 +615,8 @@ class LocalInstrumentProvider(InstrumentProvider):
         # filter
         filter_pipe = instruments["filter_pipe"]
         for filter_config in filter_pipe:
-            from . import filter as F
+            self.filter = filter
+            from qlib.data import filter as F
 
             filter_t = getattr(F, filter_config["filter_type"]).from_config(filter_config)
             _instruments_filtered = filter_t(_instruments_filtered, start_time, end_time, freq)
@@ -1012,7 +1013,7 @@ class ClientProvider(BaseProvider):
     """
 
     def __init__(self):
-        from .client import Client
+        from qlib.data.client import Client
 
         self.client = Client(C.flask_server, C.flask_port)
         self.logger = get_module_logger(self.__class__.__name__)

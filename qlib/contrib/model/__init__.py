@@ -3,4 +3,4 @@
 
 import warnings
 
-from .base import Model
+from qlib.contrib.model.base import Model

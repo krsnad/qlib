@@ -4,9 +4,9 @@
 
 import copy
 
-from .position import Position
-from .report import Report
-from .order import Order
+from qlib.contrib.backtest.position import Position
+from qlib.contrib.backtest.report import Report
+from qlib.contrib.backtest.order import Order
 
 
 """

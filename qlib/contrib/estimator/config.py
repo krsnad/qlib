@@ -7,7 +7,7 @@ import os
 import json
 import tempfile
 from pathlib import Path
-from ...config import REG_CN
+from qlib.config import REG_CN
 
 
 class EstimatorConfigManager(object):

@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 from scipy import stats
 
-from ..graph import ScatterGraph, SubplotsGraph, BarGraph, HeatmapGraph
+from qlib.contrib.report.graph import ScatterGraph, SubplotsGraph, BarGraph, HeatmapGraph
 
 
 def _group_return(pred_label: pd.DataFrame = None, reverse: bool = False, N: int = 5, **kwargs) -> tuple:

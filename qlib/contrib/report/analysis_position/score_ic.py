@@ -3,7 +3,7 @@
 
 import pandas as pd
 
-from ..graph import ScatterGraph
+from qlib.contrib.report.graph import ScatterGraph
 
 
 def _get_score_ic(pred_label: pd.DataFrame):

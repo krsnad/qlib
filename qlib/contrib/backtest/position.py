@@ -5,7 +5,7 @@
 import pandas as pd
 import copy
 import pathlib
-from .order import Order
+from qlib.contrib.backtest.order import Order
 
 """
 Position module

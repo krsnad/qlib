@@ -7,8 +7,8 @@ import logging
 import importlib
 from abc import abstractmethod
 
-from ...log import get_module_logger, TimeInspector
-from ...utils import get_module_by_module_path
+from qlib.log import get_module_logger, TimeInspector
+from qlib.utils import get_module_by_module_path
 
 
 class Pipeline(object):

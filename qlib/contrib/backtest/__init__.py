@@ -2,8 +2,8 @@
 # Licensed under the MIT License.
 
 # -*- coding: utf-8 -*-
-from .order import Order
-from .account import Account
-from .position import Position
-from .exchange import Exchange
-from .report import Report
+from qlib.contrib.backtest.order import Order
+from qlib.contrib.backtest.account import Account
+from qlib.contrib.backtest.position import Position
+from qlib.contrib.backtest.exchange import Exchange
+from qlib.contrib.backtest.report import Report

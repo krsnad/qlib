@@ -5,11 +5,11 @@ import pathlib
 import pickle
 import yaml
 import pandas as pd
-from ...data import D
-from ...log import get_module_logger
-from ...utils import get_module_by_module_path
-from ...utils import get_next_trading_date
-from ..backtest.exchange import Exchange
+from qlib.data import D
+from qlib.log import get_module_logger
+from qlib.utils import get_module_by_module_path
+from qlib.utils import get_next_trading_date
+from qlib.contrib.backtest.exchange import Exchange
 
 log = get_module_logger("utils")
 

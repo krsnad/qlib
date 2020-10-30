@@ -11,7 +11,7 @@ import pandas as pd
 from scipy.stats import spearmanr, pearsonr
 
 
-from ..data import D
+from qlib.data import D
 
 from collections import OrderedDict
 

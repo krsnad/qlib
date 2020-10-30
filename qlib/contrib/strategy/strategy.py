@@ -6,9 +6,9 @@ import copy
 import numpy as np
 import pandas as pd
 
-from ..backtest.order import Order
-from ...utils import get_pre_trading_date
-from .order_generator import OrderGenWInteract
+from qlib.contrib.backtest.order import Order
+from qlib.utils import get_pre_trading_date
+from qlib.contrib.strategy.order_generator import OrderGenWInteract
 
 
 class BaseStrategy:

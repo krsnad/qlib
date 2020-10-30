@@ -7,11 +7,11 @@ import yaml
 import pathlib
 import pandas as pd
 import shutil
-from ..backtest.account import Account
-from ..backtest.exchange import Exchange
-from .user import User
-from .utils import load_instance
-from .utils import save_instance, init_instance_by_config
+from qlib.contrib.backtest.account import Account
+from qlib.contrib.backtest.exchange import Exchange
+from qlib.contrib.online.user import User
+from qlib.contrib.online.utils import load_instance
+from qlib.contrib.online.utils import save_instance, init_instance_by_config
 
 
 class UserManager:

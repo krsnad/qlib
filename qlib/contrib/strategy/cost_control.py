@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 
-from .strategy import StrategyWrapper, WeightStrategyBase
+from qlib.contrib.strategy.strategy import StrategyWrapper, WeightStrategyBase
 import copy
 
 

@@ -7,8 +7,8 @@ from __future__ import print_function
 
 import socketio
 
-from .. import __version__
-from ..log import get_module_logger
+from qlib import __version__
+from qlib.log import get_module_logger
 import pickle
 
 

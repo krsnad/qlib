@@ -12,14 +12,14 @@ import yaml
 import pickle
 
 import qlib
-from ..evaluate import risk_analysis
-from ..evaluate import backtest as normal_backtest
-from ..evaluate import long_short_backtest
-from .config import ExperimentConfig
-from .fetcher import create_fetcher_with_config
+from qlib.contrib.evaluate import risk_analysis
+from qlib.contrib.evaluate import backtest as normal_backtest
+from qlib.contrib.evaluate import long_short_backtest
+from qlib.contrib.estimator.config import ExperimentConfig
+from qlib.contrib.estimator.fetcher import create_fetcher_with_config
 
-from ...log import get_module_logger, TimeInspector
-from ...utils import get_module_by_module_path, compare_dict_value
+from qlib.log import get_module_logger, TimeInspector
+from qlib.utils import get_module_by_module_path, compare_dict_value
 
 
 class Estimator(object):

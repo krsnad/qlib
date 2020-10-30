@@ -13,15 +13,15 @@ import platform
 import yaml
 from pathlib import Path
 
-from .utils import can_use_cache
+from qlib.utils import can_use_cache
 
 
 # init qlib
 def init(default_conf="client", **kwargs):
-    from .config import C, REG_CN, REG_US, QlibConfig
-    from .data.data import register_all_wrappers
-    from .log import get_module_logger, set_log_with_config
-    from .data.cache import H
+    from qlib.config import C, REG_CN, REG_US, QlibConfig
+    from qlib.data.data import register_all_wrappers
+    from qlib.log import get_module_logger, set_log_with_config
+    from qlib.data.cache import H
 
     C.reset()
     H.clear()
@@ -82,7 +82,7 @@ def init(default_conf="client", **kwargs):
 
 
 def _mount_nfs_uri(C):
-    from .log import get_module_logger
+    from qlib.log import get_module_logger
 
     LOG = get_module_logger("mount nfs", level=logging.INFO)
 

@@ -21,107 +21,107 @@ class Expression(object):
         return str(self)
 
     def __gt__(self, other):
-        from .ops import Gt
+        from qlib.data.ops import Gt
 
         return Gt(self, other)
 
     def __ge__(self, other):
-        from .ops import Ge
+        from qlib.data.ops import Ge
 
         return Ge(self, other)
 
     def __lt__(self, other):
-        from .ops import Lt
+        from qlib.data.ops import Lt
 
         return Lt(self, other)
 
     def __le__(self, other):
-        from .ops import Le
+        from qlib.data.ops import Le
 
         return Le(self, other)
 
     def __eq__(self, other):
-        from .ops import Eq
+        from qlib.data.ops import Eq
 
         return Eq(self, other)
 
     def __ne__(self, other):
-        from .ops import Ne
+        from qlib.data.ops import Ne
 
         return Ne(self, other)
 
     def __add__(self, other):
-        from .ops import Add
+        from qlib.data.ops import Add
 
         return Add(self, other)
 
     def __radd__(self, other):
-        from .ops import Add
+        from qlib.data.ops import Add
 
         return Add(other, self)
 
     def __sub__(self, other):
-        from .ops import Sub
+        from qlib.data.ops import Sub
 
         return Sub(self, other)
 
     def __rsub__(self, other):
-        from .ops import Sub
+        from qlib.data.ops import Sub
 
         return Sub(other, self)
 
     def __mul__(self, other):
-        from .ops import Mul
+        from qlib.data.ops import Mul
 
         return Mul(self, other)
 
     def __rmul__(self, other):
-        from .ops import Mul
+        from qlib.data.ops import Mul
 
         return Mul(self, other)
 
     def __div__(self, other):
-        from .ops import Div
+        from qlib.data.ops import Div
 
         return Div(self, other)
 
     def __rdiv__(self, other):
-        from .ops import Div
+        from qlib.data.ops import Div
 
         return Div(other, self)
 
     def __truediv__(self, other):
-        from .ops import Div
+        from qlib.data.ops import Div
 
         return Div(self, other)
 
     def __rtruediv__(self, other):
-        from .ops import Div
+        from qlib.data.ops import Div
 
         return Div(other, self)
 
     def __pow__(self, other):
-        from .ops import Power
+        from qlib.data.ops import Power
 
         return Power(self, other)
 
     def __and__(self, other):
-        from .ops import And
+        from qlib.data.ops import And
 
         return And(self, other)
 
     def __rand__(self, other):
-        from .ops import And
+        from qlib.data.ops import And
 
         return And(other, self)
 
     def __or__(self, other):
-        from .ops import Or
+        from qlib.data.ops import Or
 
         return Or(self, other)
 
     def __ror__(self, other):
-        from .ops import Or
+        from qlib.data.ops import Or
 
         return Or(other, self)
 
@@ -144,7 +144,7 @@ class Expression(object):
         pd.Series
             feature series: The index of the series is the calendar index
         """
-        from .cache import H
+        from qlib.data.cache import H
 
         # cache
         args = str(self), instrument, start_index, end_index, freq
@@ -207,7 +207,7 @@ class Feature(Expression):
 
     def _load_internal(self, instrument, start_index, end_index, freq):
         # load
-        from .data import FeatureD
+        from qlib.data.data import FeatureD
 
         return FeatureD.feature(instrument, str(self), start_index, end_index, freq)
 

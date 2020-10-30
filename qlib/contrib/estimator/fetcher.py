@@ -12,7 +12,7 @@ import pymongo
 from pathlib import Path
 from abc import abstractmethod
 
-from .config import EstimatorConfigManager, ExperimentConfig
+from qlib.contrib.estimator.config import EstimatorConfigManager, ExperimentConfig
 
 
 class Fetcher(object):

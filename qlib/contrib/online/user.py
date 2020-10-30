@@ -3,9 +3,9 @@
 
 import logging
 
-from ...log import get_module_logger
-from ..evaluate import risk_analysis
-from ...data import D
+from qlib.log import get_module_logger
+from qlib.contrib.evaluate import risk_analysis
+from qlib.data import D
 
 
 class User:

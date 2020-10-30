@@ -5,7 +5,7 @@ import abc
 import numpy as np
 import pandas as pd
 
-from ...log import TimeInspector
+from qlib.log import TimeInspector
 
 EPS = 1e-12
 

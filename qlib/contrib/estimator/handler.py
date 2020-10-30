@@ -9,11 +9,11 @@ import logging
 import pandas as pd
 import numpy as np
 
-from ...log import get_module_logger, TimeInspector
-from ...data import D
-from ...utils import parse_config, transform_end_date
+from qlib.log import get_module_logger, TimeInspector
+from qlib.data import D
+from qlib.utils import parse_config, transform_end_date
 
-from . import processor as processor_module
+from qlib.contrib.estimator import processor as processor_module
 
 
 class BaseDataHandler(abc.ABC):
